@@ -1,0 +1,166 @@
+/* @font-face for custom font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Button hover effect */
+.btn-primary {
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card hover effect */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel image adjustments */
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Making Carousel icons visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0) sepia(0) saturate(100%) hue-rotate(0deg) brightness(0) contrast(100%) grayscale(0);
+}
+
+.carousel-caption {
+    color: black !important;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+}
+
+
+/* For mobile phones */
+@media (max-width: 575px) {
+    footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 18px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    footer {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .carousel-inner img {
+        max-height: 400px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    h1, h2, h3 {
+        font-size: 22px;
+    }
+}
+
+/* For small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        font-size: 16px;
+        padding: 14px 0;
+    }
+
+    .carousel-inner img {
+        max-height: 450px;
+    }
+
+    .card {
+        margin-bottom: 25px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+}
+
+/* For desktops */
+@media (min-width: 992px) {
+    footer {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .carousel-inner img {
+        max-height: 500px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    h1, h2, h3 {
+        font-size: 28px;
+    }
+}
